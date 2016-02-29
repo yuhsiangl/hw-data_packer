@@ -3,7 +3,7 @@ class ShortStringPacker
   # Arguments:
   #   str - String object
   # Returns: a Fixnum object
-  def pack(str)
+  def self.pack(str)
     # IMPLEMENT THIS METHOD
   end
 
@@ -11,7 +11,7 @@ class ShortStringPacker
   # Arguments:
   #   packed - a Fixnum object
   # Returns: a String object
-  def unpack(packed)
+  def self.unpack(packed)
     # IMPLEMENT THIS METHOD
   end
 end
