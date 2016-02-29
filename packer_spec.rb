@@ -17,13 +17,13 @@ describe 'Test whether ShortStringPacker works' do
     str.must_be_instance_of String
   end
 
-  3.times do
+  30.times do
     str = random_string
 
     it "should pack and unpack \'#{str}\' correctly" do
       packed = ShortStringPacker.pack(str)
       unpacked = ShortStringPacker.unpack(packed)
-      unpacked.should_equal str
+      unpacked.must_equal str
     end
   end
 end
