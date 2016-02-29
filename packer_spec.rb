@@ -5,7 +5,9 @@ def random_string
   [*'a'..'z'].sample(rand(1..12)).join
 end
 
-describe 'Test whether ShortStringPacker works' do
+test_cases = %w(a z asdf abcdefghijkl aaaaaazzzzzz)
+
+describe 'Test whether packing methods are valid' do
   it 'should pack strings into numbers' do
     packed = ShortStringPacker.pack(random_string)
     packed.must_be_instance_of Fixnum
@@ -16,10 +18,10 @@ describe 'Test whether ShortStringPacker works' do
     str = ShortStringPacker.unpack(rand_packed)
     str.must_be_instance_of String
   end
+end
 
-  30.times do
-    str = random_string
-
+describe 'Test whether roundtripping of packing works' do
+  test_cases.each do |str|
     it "should pack and unpack \'#{str}\' correctly" do
       packed = ShortStringPacker.pack(str)
       unpacked = ShortStringPacker.unpack(packed)
