@@ -32,6 +32,7 @@ Methods:
 ## Coding rules
 - Do not use any external libraries (gems)
 - Do not write code anywhere outside of the two methods of `short_string_packer.rb`
+- Do not use any for/while loops. ONLY use `.map`, `.each` and so on.
 
 ## Testing
 Test your solution by running the test *specification* file:
