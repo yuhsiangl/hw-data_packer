@@ -5,8 +5,12 @@ Implement a simple but effective compression scheme for short, simple strings
 **Important: Please DO NOT FORK this project to write your solution, because others will be able to see your solution**
 
 ## Download
-Clone this project to your personal repo:
-`$ git clone https://github.com/ISS-Security/hw-data_packer`
+If you have `git` setup and know how to use it, clone (DO NOT FORK) this project to your local machine:
+```
+$ git clone git@github.com:soumyaray/hw-data_packer.git
+```
+
+If you are not familiar with `git`, simply download the RAW version of each file. Click on each filename listed on Github, click the 'RAW' button, and then download that file.
 
 ## Overview
 
@@ -47,3 +51,12 @@ Finished in 0.001401s
 
 7 runs, 7 assertions, 0 failures, 0 errors, 0 skips
 ```
+
+## Submission
+** Do NOT submit a Github repository **
+
+I will only take submissions of your version of the solution file `short_string_packer.rb`. Please follow the following directions:
+
+- Complete the solution make sure all tests pass.
+- Upload a copy of your solution file to [gist.github.com](https://gist.github.com)
+- On Canvas, **submit a URL to your uploaded gist file**.
