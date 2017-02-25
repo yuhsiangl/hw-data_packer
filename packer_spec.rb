@@ -10,7 +10,7 @@ test_cases = %w(a z asdf abcdefghijkl aaaaaazzzzzz)
 describe 'Test whether packing methods are valid' do
   it 'should pack strings into numbers' do
     packed = ShortStringPacker.pack(random_string)
-    packed.must_be_instance_of Fixnum
+    packed.must_be_instance_of Integer
   end
 
   it 'should unpack numbers back into strings' do

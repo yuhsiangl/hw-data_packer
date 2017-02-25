@@ -15,19 +15,19 @@ If you are not familiar with `git`, simply download the RAW version of each file
 ## Overview
 
 In this assignment, you must write the guts of two methods found in the file `short_string_packer.rb`:
-- The `pack(str)` method must take a string called `str` and return a Fixnum integer
-- The `unpack(packed)` method must take a Fixnum called `packed`, decompress it and return the string that was originally compressed
+- The `pack(str)` method must take a string called `str` and return an Integer
+- The `unpack(packed)` method must take an Integer called `packed`, decompress it and return the string that was originally compressed
 
 ## Details
 Types:
-- `str`: String that only contains lowercase characters 'a' - 'z' (no spaces, digits, uppercase, symbols, etc.)
-- `packed`: An integer of type Fixnum (not Bignum or any other integer type)
+- `str`: A short String that only contains lowercase characters 'a' - 'z' (no spaces, digits, uppercase, symbols, etc.)
+- `packed`: An integer of type Integer
 
 Methods:
 - `pack(str)`: Realize that the 26 letters 'a'-'z' don't need to use all the bits available in a UTF-8 character. You can use this to compress a string by packing the bits of each character together:
   - take each letter of `str`, convert it to a number from 0-25
-  - take the bits of each number have created and *shift* them appropriately, and use a binary operation to pack them together into a single Fixnum called `packed`
-- `unpack(packed)`: Reverse the process above by accepting a packed Fixnum and returning the reproduced String
+  - take the bits of each number have created and *shift* them appropriately, and use a binary operation to pack them together into a single Integer called `packed`
+- `unpack(packed)`: Reverse the process above by accepting a packed Integer and returning the reproduced String
 
 ## Coding rules
 - Do not use any external libraries (gems)
