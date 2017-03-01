@@ -25,7 +25,7 @@ Types:
 
 Methods:
 - `pack(str)`: Realize that the 26 letters 'a'-'z' don't need to use all the bits available in a UTF-8 character. You can use this to compress a string by packing the bits of each character together:
-  - take each letter of `str`, convert it to a number from 0-25
+  - take each letter of `str`, convert it to a number from 1-26
   - take the bits of each number have created and *shift* them appropriately, and use a binary operation to pack them together into a single Integer called `packed`
 - `unpack(packed)`: Reverse the process above by accepting a packed Integer and returning the reproduced String
 
