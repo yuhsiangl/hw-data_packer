@@ -14,7 +14,7 @@ describe 'Test whether packing methods are valid' do
   end
 
   it 'should unpack numbers back into strings' do
-    rand_packed = (rand * 10000000).to_i
+    rand_packed = (rand * 10_000_000).to_i
     str = ShortStringPacker.unpack(rand_packed)
     str.must_be_instance_of String
   end
