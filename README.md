@@ -7,14 +7,14 @@ Implement a simple but effective compression scheme for short, simple strings
 ## Download
 If you have `git` setup and know how to use it, clone (DO NOT FORK) this project to your local machine:
 ```
-$ git clone git@github.com:soumyaray/hw-data_packer.git
+$ git clone git@github.com:ISS-Security/hw-data_packer.git
 ```
 
-If you are not familiar with `git`, simply download the RAW version of each file. Click on each filename listed on Github, click the 'RAW' button, and then download that file.
+If you are not familiar with `git`, simply choose to download a ZIP of the whole folder. Click on each filename listed on Github, click the 'RAW' button, and then download that file.
 
 ## Overview
 
-In this assignment, you must write the guts of two methods found in the file `short_string_packer.rb`:
+In this assignment, you must write the code needed within two methods found in the file `short_string_packer.rb`:
 - The `pack(str)` method must take a string called `str` and return an Integer
 - The `unpack(packed)` method must take an Integer called `packed`, decompress it and return the string that was originally compressed
 
