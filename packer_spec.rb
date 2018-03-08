@@ -10,13 +10,13 @@ test_cases = %w(a z asdf abcdefghijkl aaaaaazzzzzz)
 describe 'Test whether packing methods are valid' do
   it 'should pack strings into numbers' do
     packed = ShortStringPacker.pack(random_string)
-    packed.must_be_instance_of Integer
+    _(packed).must_be_instance_of Integer
   end
 
   it 'should unpack numbers back into strings' do
     rand_packed = (rand * 10_000_000).to_i
     str = ShortStringPacker.unpack(rand_packed)
-    str.must_be_instance_of String
+    _(str).must_be_instance_of String
   end
 end
 
@@ -25,7 +25,7 @@ describe 'Test whether roundtripping of packing works' do
     it "should pack and unpack \'#{str}\' correctly" do
       packed = ShortStringPacker.pack(str)
       unpacked = ShortStringPacker.unpack(packed)
-      unpacked.must_equal str
+      _(unpacked).must_equal str
     end
   end
 end
