@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'minitest/autorun'
 require './short_string_packer'
 
@@ -5,7 +7,7 @@ def random_string
   [*'a'..'z'].sample(rand(1..12)).join
 end
 
-test_cases = %w(a z asdf abcdefghijkl aaaaaazzzzzz)
+test_cases = %w[a z asdf abcdefghijkl aaaaaazzzzzz]
 
 describe 'Test whether packing methods are valid' do
   it 'should pack strings into numbers' do

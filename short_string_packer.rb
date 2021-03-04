@@ -1,15 +1,18 @@
+# frozen_string_literal: true
+
+# Packs/Unpacks a String to and from an Integer
 class ShortStringPacker
-  ## Packs a short string into a Fixnum
+  ## Packs a short string into a Integer
   # Arguments:
   #   str - String object
-  # Returns: a Fixnum object
+  # Returns: a Integer object
   def self.pack(str)
     # IMPLEMENT THIS METHOD
   end
 
-  ## Unpacks a Fixnum from pack() method into a short string
+  ## Unpacks a Integer from pack() method into a short string
   # Arguments:
-  #   packed - a Fixnum object
+  #   packed - a Integer object
   # Returns: a String object
   def self.unpack(packed)
     # IMPLEMENT THIS METHOD

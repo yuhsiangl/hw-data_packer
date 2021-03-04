@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'benchmark'
 require './short_string_packer'
 
