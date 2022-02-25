@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # Packs/Unpacks a String to and from an Integer
-class ShortStringPacker
+module ShortStringPacker
   ## Packs a short string into a Integer
   # Arguments:
   #   str - String object
