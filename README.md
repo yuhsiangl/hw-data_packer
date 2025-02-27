@@ -2,17 +2,17 @@
 
 Implement a simple but effective compression scheme for short, simple strings
 
-**Important: Please DO NOT FORK this project to write your solution**, because others will be able to see your solution
+## Setup
 
-## Download
+Make sure you have a Github account, and setup your public and private SSH keys for password-less authentication from your local machine to Github.
 
-If you have `git` setup and know how to use it, clone (DO NOT FORK) this project to your local machine:
+**Fork** this Github project to your your own account. Then, **clone** your fork to your local machine.
 
 ```sh
-git clone git@github.com:ISS-Security/hw-data_packer.git
+git clone git@github.com:[your-github-username]/hw-data_packer.git
 ```
 
-If you are not familiar with `git`, simply choose to download a ZIP of the whole folder. Click on each filename listed on Github, click the 'RAW' button, and then download that file.
+Run `bundle install` to install the package dependencies listed in `Gemfile`. After bundling, you should see a `Gemfile.lock` file appear in your project directory.
 
 ## Overview
 
@@ -39,7 +39,8 @@ Methods:
 
 - Do not use any external libraries (gems)
 - Do not write code anywhere outside of the two methods of `short_string_packer.rb`
-- Do not use any for/while loops. ONLY use `.map`, `.each` and so on.
+- Do not use any for/while loops. ONLY use functional iterators: `.map`, `.each`, `.reduce` etc.
+- Run `rubocop` on your code to ensure that it is formatted correctly
 
 ## Testing
 
@@ -49,7 +50,7 @@ Test your solution by running the test *specification* file:
 ruby packer_spec.rb
 ```
 
-Before you change any code, make sure that all your tests fail. Then, as you write each method, different tests will pass or fail. Your final solution should see all tests passing:
+Your final solution should see all tests passing:
 
 ```sh
 $ ruby packer_spec.rb
@@ -66,10 +67,4 @@ Finished in 0.001401s
 
 ## Submission
 
-**Do NOT submit a Github repository** – please read below.
-
-I will only take submissions of your version of the solution file `short_string_packer.rb`. Please follow the following directions:
-
-- Complete the solution make sure all tests pass.
-- Upload a copy of your solution file to [gist.github.com](https://gist.github.com)
-- On Canvas, **submit a URL to your uploaded gist file**.
+On Canvas, **submit a URL to your git repository**.

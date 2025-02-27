@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'minitest/autorun'
+require 'minitest/rg'
 require './short_string_packer'
 
 def random_string
