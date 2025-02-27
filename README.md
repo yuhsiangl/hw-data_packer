@@ -6,13 +6,23 @@ Implement a simple but effective compression scheme for short, simple strings
 
 Make sure you have a Github account, and setup your public and private SSH keys for password-less authentication from your local machine to Github.
 
-**Fork** this Github project to your your own account. Then, **clone** your fork to your local machine.
+1. **Fork** this Github project to your your own account. Then, **clone** your fork to your local machine.
 
 ```sh
 git clone git@github.com:[your-github-username]/hw-data_packer.git
 ```
 
-Run `bundle install` to install the package dependencies listed in `Gemfile`. After bundling, you should see a `Gemfile.lock` file appear in your project directory.
+2. **Set your local ruby version** for the project folder using `rbenv`
+
+e.g., for Ruby 3.4.2:
+
+```
+rbenv local 3.4.2
+```
+
+This creates a `.ruby-version` file in the root of your project directory.
+
+3. Run `bundle install` to install the package dependencies listed in `Gemfile`. After bundling, you should see a `Gemfile.lock` file appear in your project directory.
 
 ## Overview
 
